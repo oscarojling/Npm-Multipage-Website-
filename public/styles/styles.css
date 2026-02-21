@@ -61,7 +61,6 @@ body {
   color: var(--primary-color-gold);
   text-decoration: none;
   transition: all 0.3s;
-  font-family: "Cinzel", serif;
   letter-spacing: 1px;
 }
 
