@@ -1,0 +1,78 @@
+.races-container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 24px;
+  padding: 40px;
+  justify-content: center;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 3rem;
+  color: var(--primary-color-gold);
+  padding: 40px 0 0;
+}
+
+.race-card {
+  background-color: var(--secondary-color-brown);
+  border: 2px solid var(--primary-color-gold);
+  border-radius: 4px;
+  padding: 24px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: var(--background-color-parchment);
+}
+
+.race-card h2 {
+  color: var(--primary-color-gold);
+  border-bottom: 1px solid var(--primary-color-gold);
+  padding-bottom: 8px;
+}
+
+.race-card a {
+  color: var(--primary-color-gold);
+  font-weight: bold;
+  margin-top: auto;
+  text-decoration: none;
+}
+
+.race-card a:hover {
+  text-decoration: underline;
+}
+
+.race-image {
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  object-fit: contain;
+  border-radius: 16px;
+  border: 2px solid var(--primary-color-gold);
+}
+
+.race-detail {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 40px;
+  background-color: var(--secondary-color-brown);
+  border: 2px solid var(--primary-color-gold);
+  border-radius: 4px;
+  color: var(--background-color-parchment);
+}
+
+.race-detail h1 {
+  color: var(--primary-color-gold);
+}
+
+@media screen and (max-width: 768px) {
+  .races-container {
+    padding: 20px;
+    gap: 16px;
+  }
+
+  .race-card {
+    width: 100%;
+  }
+}

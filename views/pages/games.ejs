@@ -1,0 +1,15 @@
+<%- include('../partials/head.ejs')  %>
+<link rel="stylesheet" href="/styles/games.css">
+<%- include('../partials/header.ejs')  %>
+
+<main>
+  <h1 class="page-title"><%= pageTitle %></h1>
+  <% if (locals.pageType) { %>
+  <% if (pageType === "games") { %>
+  <%- include('../partials/game-list')  %>
+  <% } else {  %>
+  <%- include ('../partials/game-detail')  %>
+  <% } %>
+  <% } %>
+</main>
+<%- include ('../partials/footer.ejs') %>

@@ -1,0 +1,10 @@
+<div class="game-container">
+  <% games.forEach(game => { %>
+  <div class="game-card">
+    <h2><%= game.name  %></h2>
+    <p>Released: <%= game.released %></p>
+    <p>Location: <%= game.location %></p>
+    <a href="/games/<%= game.slug %>">Read more</a>
+  </div>
+  <% }); %>
+</div>

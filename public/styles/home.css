@@ -1,0 +1,59 @@
+.home-hero {
+  background-image: url("/images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 120px 40px;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  border-bottom: 3px solid var(--primary-color-gold);
+}
+
+.home-hero h1 {
+  font-size: 4rem;
+  color: var(--primary-color-gold);
+  margin-bottom: 16px;
+}
+
+.home-links {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  padding: 60px 40px;
+  flex-wrap: wrap;
+}
+
+.home-card {
+  background-color: var(--secondary-color-brown);
+  color: var(--primary-color-gold);
+  border: 2px solid var(--primary-color-gold);
+  border-radius: 4px;
+  padding: 32px 48px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s;
+  width: 250px;
+}
+
+.home-card:hover {
+  background-color: var(--primary-color-gold);
+  color: var(--secondary-color-brown);
+}
+
+@media screen and (max-width: 768px) {
+  .home-hero {
+    padding: 60px 20px;
+  }
+
+  .home-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .home-links {
+    padding: 40px 20px;
+  }
+
+  .home-card {
+    width: 100%;
+  }
+}

@@ -1,0 +1,13 @@
+<div class="race-detail">
+  <img class="race-image" src="/images/<%= race.image %>" alt="<%= race.name %>">
+  <p>Homeland: <%= race.homeland %></p>
+  <p>Native Game: <%= race.nativeGame %></p>
+  <p>Type: <%= race.type %></p>
+  <p><%= race.description  %></p>
+  <h3>Abilities</h3>
+  <ul>
+    <% race.abilities.forEach(ability => { %>
+    <li><%= ability %></li>
+    <% }) %>
+  </ul>
+</div>

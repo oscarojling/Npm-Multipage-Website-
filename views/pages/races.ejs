@@ -1,0 +1,15 @@
+<%- include('../partials/head.ejs')  %>
+<link rel="stylesheet" href="/styles/races.css">
+<%- include('../partials/header.ejs')  %>
+
+<main>
+  <h1 class="page-title"><%= pageTitle %></h1>
+  <% if (locals.pageType) { %>
+  <% if (pageType === "races") { %>
+  <%- include ('../partials/race-list') %>
+  <% } else { %>
+  <%- include('../partials/race-detail')  %>
+  <% } %>
+  <% } %>
+</main>
+<%- include('../partials/footer.ejs')  %>
