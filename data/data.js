@@ -1,7 +1,7 @@
 export const games = [
   {
     name: "Morrowind",
-    slug: "morrowind",
+    id: "morrowind",
     released: 2002,
     location: "Vvardenfell, Morrowind",
     description:
@@ -12,7 +12,7 @@ export const games = [
   },
   {
     name: "Oblivion",
-    slug: "oblivion",
+    id: "oblivion",
     released: 2006,
     location: "Cyrodiil",
     description:
@@ -23,7 +23,7 @@ export const games = [
   },
   {
     name: "Skyrim",
-    slug: "skyrim",
+    id: "skyrim",
     released: 2011,
     location: "Skyrim",
     description:
@@ -37,18 +37,18 @@ export const games = [
 export const races = [
   {
     name: "Dark Elf",
-    slug: "dark-elf",
+    id: "dark-elf",
     homeland: "Morrowind",
     nativeGame: "Morrowind",
     type: "Mer",
     description:
       "Also known as Dunmer, Dark Elves are native to Morrowind. They are known for their intelligence, agility and natural affinity for magic. They have ash-grey skin and red eyes.",
-    abilities: ["Ancestor's Warth", "Fire Resistance", "Magic Bonus"],
+    abilities: ["Ancestor's Wrath", "Fire Resistance", "Magic Bonus"],
     image: "dark-elf.jpg",
   },
   {
     name: "Imperial",
-    slug: "imperial",
+    id: "imperial",
     homeland: "Cyrodiil",
     nativeGame: "Oblivion",
     type: "Human",
@@ -59,7 +59,7 @@ export const races = [
   },
   {
     name: "Nord",
-    slug: "nord",
+    id: "nord",
     homeland: "Skyrim",
     nativeGame: "Skyrim",
     type: "Human",

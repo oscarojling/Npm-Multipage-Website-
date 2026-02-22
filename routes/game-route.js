@@ -13,13 +13,13 @@ gamesRouter.get("/", (req, res) => {
   });
 });
 
-gamesRouter.get("/:slug", (req, res) => {
-  const game = games.find((g) => g.slug === req.params.slug);
+gamesRouter.get("/:id", (req, res) => {
+  const game = games.find((g) => g.id === req.params.id);
   if (!game) return res.status(404).send("Game not found");
   res.render(path.join(__dirname, "views/pages/games"), {
     pageTitle: game.name,
-    pageType: game.slug,
-    game: game,
+    pageType: game.id,
+    game: game
   });
 });
 

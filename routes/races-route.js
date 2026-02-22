@@ -13,13 +13,13 @@ racesRouter.get("/", (req, res) => {
   });
 });
 
-racesRouter.get("/:slug", (req, res) => {
-  const race = races.find((r) => r.slug === req.params.slug);
+racesRouter.get("/:id", (req, res) => {
+  const race = races.find((r) => r.id === req.params.id);
   if (!race) return res.status(404).send("Race not found");
   res.render(path.join(__dirname, "views/pages/races"), {
     pageTitle: race.name,
-    pageType: race.slug,
-    race: race,
+    pageType: race.id,
+    race: race
   });
 });
 
